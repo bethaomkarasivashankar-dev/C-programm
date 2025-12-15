@@ -4,12 +4,16 @@ main()
 	FILE *fp;
 	char ch;
 	int i=0;
-	fp=fopen("SATYA.TXT","W");
+	fp=fopen("SATYA.TXT",'w');
 	while (i<20)
-{    ch=getchar();
+{  
+	ch=getchar();
     fputc(ch,fp);
     i++;
-	}
+}
 
-	fclose(fp);}
+	fclose(fp);
+    return 0;
+}
+
 
