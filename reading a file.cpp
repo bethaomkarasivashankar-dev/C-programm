@@ -4,14 +4,14 @@ int main()
 {
 	FILE *fp;
 	char ch;
-	fp=fopen("123pointer.cpp","r");
+	fp=fopen("123pointer.cpp",'r');
 	if(fp==NULL)
 	{
 		printf("file does't exist ");
 		exit (0);
 	}
 	ch=fgetc(fp);
-	while (ch!=EOF);
+	while (ch!=EOF)
 	{
 		printf("%c",ch);
 		ch=fgetc(fp);
@@ -19,3 +19,4 @@ int main()
 	fclose(fp);
 	return 0;
 	}
+
